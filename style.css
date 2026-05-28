@@ -128,3 +128,26 @@ header {
         }
     }
 }
+
+@media(min-width: 630px) {
+    main {
+        max-width: 62.7rem;
+        margin-inline: auto;
+    }
+
+    .adicionar-item div {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1.6rem;
+
+        input {
+            grid-column: 1/8;
+            margin: 0;
+        }
+
+        button {
+            grid-column: 8/11;
+            cursor: pointer;
+        }
+    }
+}
